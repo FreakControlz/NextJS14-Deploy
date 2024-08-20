@@ -1,15 +1,16 @@
-import Video from "next-video";
 import BackgroundVideo from "next-video/background-video";
-
+import Link from "next/link";
 
 type CardProps = {
   title: string;
   paragraph: string;
   source?: string;
+  href: string;
 };
 
-const CardVideo = ({ title, paragraph, source }: CardProps) => {
+const CardVideo = ({ title, paragraph, source,href }: CardProps) => {
   return (
+    <Link href={href}>
     <div className="hover:scale-[1.02] transition-all xl:w-[800px] drop-shadow-2xl rounded-xl text-center bg-slate-100 relative">
       <BackgroundVideo
         src={source}
@@ -20,6 +21,7 @@ const CardVideo = ({ title, paragraph, source }: CardProps) => {
         <p className="regular-24">{paragraph}</p>
       </div>
     </div>
+    </Link>
   );
 };
 
