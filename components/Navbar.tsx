@@ -4,7 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { NAV_LINKS } from "../constants";
 import Button from "./Button";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { Menu } from '@geist-ui/icons';
+import { X } from '@geist-ui/icons'
+
 import { use, useEffect, useState } from "react";
 
 const Navbar = () => {
@@ -81,7 +83,7 @@ const Navbar = () => {
             : "inline-block cursor-pointer lg:hidden"
         }
       >
-        <AiOutlineMenu size={32} />
+        <Menu size={32} />
       </div>
       <div
         className={
@@ -92,7 +94,7 @@ const Navbar = () => {
       >
         <div className="flex lg:hidden w-full items-center justify-end">
           <div className="cursor-pointer" onClick={handleNav}>
-            <AiOutlineClose size={32} />
+            <X size={32} />
           </div>
         </div>
 
