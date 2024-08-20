@@ -1,7 +1,7 @@
 import { DataTable } from "../../components/DataTable";
 import { Columns } from "../../components/Columns";
 async function getWeekTraining() {
-  const response = await fetch('http://localhost:3000/api/WeekTraining', { method: 'GET' });
+  const response = await fetch('/api/WeekTraining', { method: 'GET' });
 
   // Check if the response is okay (status code 200-299)
   if (!response.ok) {
@@ -31,7 +31,7 @@ export default async function Sprinting() {
     // Return the training data starts here:
   return (
     <>
-      <main className="flex  min-w-screen min-h-screen flex-col items-center justify-between p-12">
+      <main className="lg:flex  lg:min-w-screen lg:min-h-screen lg:flex-col items-center justify-between lg:p-12 px-3 ">
         <DataTable columns={Columns} data={weekTraining} />
      </main>
     </>
