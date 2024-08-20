@@ -1,7 +1,7 @@
 import { DataTable } from "../../components/DataTable";
 import { Columns } from "../../components/Columns";
 async function getWeekTraining() {
-  const response = await fetch('/api/WeekTraining', { method: 'GET' });
+  const response = await fetch('https://next-js-14-deploy-ov4nfd3vq-florian-van-der-dussens-projects.vercel.app/api/WeekTraining', { method: 'GET' });
 
   // Check if the response is okay (status code 200-299)
   if (!response.ok) {
