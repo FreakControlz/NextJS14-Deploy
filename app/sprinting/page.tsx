@@ -1,10 +1,8 @@
 import { DataTable } from "../../components/DataTable";
 import { Columns } from "../../components/Columns";
 
-const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
-
 async function getWeekTraining() {
-  const response = await fetch(`${baseUrl}/api/WeekTraining`, { method: 'GET' });
+  const response = await fetch(`https://next-js-14-deploy.vercel.app/api/WeekTraining`, { method: 'GET' });
 
   // Check if the response is okay (status code 200-299)
   if (!response.ok) {
