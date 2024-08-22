@@ -4,7 +4,7 @@ import Cards from "../components/Cards";
 export default function Home() {
   return (
     <>
-          <Hero />
+          {/* <Hero /> */}
           <Cards/>     
     </>
   );
