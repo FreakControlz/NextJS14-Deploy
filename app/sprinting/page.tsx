@@ -8,7 +8,6 @@ async function getWeekTraining() {
   if (!response.ok) {
     throw new Error(`Failed to fetch week training data: ${response.statusText}`);
   }
-
   // Parse the JSON data
   const data = await response.json();
 

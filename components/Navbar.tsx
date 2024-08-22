@@ -39,7 +39,7 @@ const Navbar = () => {
     // First Nav bar with logo and links
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
       <Link href="/">
-        <Image src="/Logo.svg" alt="logo" width={150} height={29} />
+        <Image src="/Logo2.svg" alt="logo" width={80} height={20} />
       </Link>
       <ul className="hidden h-full gap-12 lg:flex">
         {NAV_LINKS.map((link) => (
