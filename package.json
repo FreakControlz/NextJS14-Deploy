@@ -11,6 +11,8 @@
   "dependencies": {
     "@geist-ui/core": "^2.3.8",
     "@geist-ui/icons": "^1.0.2",
+    "@react-three/drei": "^9.112.1",
+    "@react-three/fiber": "^8.17.7",
     "@tanstack/react-table": "^8.20.1",
     "@vercel/postgres": "^0.9.0",
     "class-variance-authority": "^0.7.0",
@@ -19,7 +21,7 @@
     "glitch-text": "^1.6.1",
     "lucide-react": "^0.428.0",
     "moment": "^2.30.1",
-    "next": "14.2.2",
+    "next": "^14.2.13",
     "next-video": "^1.1.4",
     "react": "^18",
     "react-dom": "^18",
@@ -27,7 +29,8 @@
     "react-player": "^2.16.0",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
-    "tailwindcss-animated": "^1.1.2"
+    "tailwindcss-animated": "^1.1.2",
+    "three": "^0.168.0"
   },
   "devDependencies": {
     "@types/node": "^20",
