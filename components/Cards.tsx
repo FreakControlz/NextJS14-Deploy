@@ -15,7 +15,7 @@ const Cards = () => {
       <CardVideo   
           title="Sprinting"
           paragraph="Sprint training schedule for the week."
-          source="/Blockstart-black.mp4"
+          source='https://www.florianvanderdussen.nl/Blockstart-black.mp4'
           href="/sprinting"/>
     </section>
   );
