@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -8,13 +9,32 @@ const Footer = () => {
         <div className="flex gap-10  my-2">
           <li className="text-white cursor-pointer hover:bold-16">Home</li>
           <li className="text-white cursor-pointer  hover:bold-16">About</li>
-          <li className="text-white cursor-pointer  hover:bold-16">Contact</li>
         </div>
       </ul>
-      <ul className="flex gap-10 justify-center py-5 ">
-        <Image className="hover:scale-105 cursor-pointer" src="/facebook.svg" alt="facebook" width={32} height={32} />
-        <Image className="hover:scale-105 cursor-pointer" src="/instagram.svg" alt="instagram" width={32} height={32} />
-        <Image className="hover:scale-105 cursor-pointer" src="/linkedin.svg" alt="instagram" width={32} height={32} />
+      <ul className="flex gap-10 justify-center py-5">
+        <Link href="https://www.instagram.com/florian_dussen/" passHref>
+          <Image
+            className="hover:scale-105 cursor-pointer"
+            src="/instagram.svg"
+            alt="instagram"
+            width={32}
+            height={32}
+          />
+        </Link>
+        <Link href="https://www.linkedin.com/in/florian-van-der-dussen/" passHref>
+          <Image
+            className="hover:scale-105 cursor-pointer"
+            src="/linkedin.svg"
+            alt="linkedin"
+            width={32}
+            height={32}
+          />
+        </Link>
+      </ul>
+      <ul>
+        <Link href="/privacy-policy" className="text-gray-20 text-center hover:underline">
+        <p>florianvanderdussen@gmail.com</p>
+        </Link>
       </ul>
     </section>
   );
