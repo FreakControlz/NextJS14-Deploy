@@ -25,16 +25,23 @@ export default function TimingGates() {
 
                 <Image className='py-5'src="/Prototype1.jpg" alt="First Prototype" width={800} height={600} />
 
-                <p> After proving the concept and testing the hardware I started modeling a final version of the system and started coding improvements to the code. This resulted in the following casing for the system: </p>
+                <p>After proving the concept and testing the hardware I started modeling a final version of the system and started coding improvements to the code. This resulted in the following casing for the system: </p>
                 <Image  className='py-5'src="/Case.png" alt="Case" width={800} height={600} />
 
-                <p>I refined the casing for 3 iterations, with additions in small holding pieces of plastic and casings for the battery packs. I also provided a stabilizer for the antenna, which allowed for potential water proofing in the future.</p>
+                <p>Then it was time for the assembly of the system. The assembly and wiring is handsoldered and is pretty fragile, but it is functional for the prototype.</p>
                 <Image className='py-5'src="/Prototype.jpg" alt="Second Prototype" width={800} height={600} />
 
-                <p>Once completely finished and debugging the codes with a few hickups along the way, the final system works correctly. This system was validated by a slowmotion camera setup from multiple phones to validate the system at 960 fps. The system came within 0.003 seconds of accuracy on average after 10 tests. This DIY system forms a proper alternative and mainly cheaper alternative than some of the competitors. I created this system for a total material cost of 90 euros. This system is now used on my track and field club on a weekly basis.</p>
+                <p>Once completely finished and debugging the codes with a few hickups along the way, the final system works correctly. This system was validated by a slowmotion camera setup from multiple phones to validate the system at 960 fps. The system came within 0.003 seconds of accuracy on average after 10 tests. This DIY system forms a proper alternative and mainly cheaper alternative than some of the competitors. I created this system for the total material cost of 90 euros.</p>
 
                 <Image className='py-5'src="/Gates.png" alt="ET" width={800} height={600} />
                 
+                <h1 className="text-xl font-bold">Second version of the project (WIP)</h1>
+                <p>After the first version of the project I started working on a second version of the project. This version is still in development, but it will feature a more robust design. The goal is to create a version with a smaller housing/case and an internal custom circuit board with an integrated arduino processor. The circuit board will be created using Altium Designer and is in the development phase currently. An updated version of the schematic can be seen below:</p>
+
+                <Image className='py-5'src="/Altium1.png" alt="Schematic" width={800} height={600} />
+
+                <p className='pb-5'>Once the circuit board is finished I will create a new case for the system. It will house compacter batteries. The voltages will be regulated using step voltage regulators placed at strategic points. The current of the RF module is very fragile and therefore another alternative is to be researched. The step regulator might create noise in the signal that is undesirable for the accuracy of the system. The system will be handed out to my local track and field club for free for the athletes to use whenever they want to measure their maximum velocity sprinting or to use data-driven training.</p>
+
             </div>
         </section>
     </>
