@@ -1,5 +1,6 @@
 import CardImage from "../components/CardImage";
 import CardVideo from "../components/CardVideo";
+import { Analytics } from '@vercel/analytics/next';
 export default function Projects() {
   return (
     <>
@@ -17,6 +18,7 @@ export default function Projects() {
                       source="https://www.florianvanderdussen.nl/AI.mp4"
                       href="/AIGAIT"/>
                 </div>
+                <Analytics />
             </section>
     </>
   );
