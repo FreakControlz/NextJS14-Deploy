@@ -20,9 +20,11 @@ const CardVideo = ({ className, title, paragraph, source = "/AI.mp4", href }: Ca
             <video
               src={source}
               className={`absolute top-0 left-0 w-full h-full object-cover rounded-3xl pointer-events-none ${className}`}
+              playsInline
               autoPlay
               loop
               muted
+              webkit-playsinline="true"
             />
           )}
         </div>
