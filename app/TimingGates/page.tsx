@@ -36,12 +36,17 @@ export default function TimingGates() {
                 <Image className='py-5'src="/Gates.png" alt="ET" width={800} height={600} />
                 
                 <h1 className="text-xl font-bold">Second version of the project (WIP)</h1>
-                <p>After the first version of the project I started working on a second version of the project. This version is still in development, but it will feature a more robust design. The goal is to create a version with a smaller housing/case and an internal custom circuit board with an integrated arduino processor. The circuit board will be created using Altium Designer and is in the development phase currently. An updated version of the schematic can be seen below:</p>
+                <p>After the first version of the project I started working on a second version of the project. This version is still in development, but it will feature a more robust design. During usage one of my youth athletes dropped the casing on accident, resulting in multiple solder breakages. This indicated that the improvised soldered wires are not going to be enough to make this a unsupervised version. Therefore, the goal is to create a version with a smaller housing/case and an internal custom circuit board with an integrated arduino processor. The circuit board will be created using Altium Designer. An updated version of the schematic can be seen below:</p>
 
                 <Image className='py-5'src="/Altium1.png" alt="Schematic" width={800} height={600} />
 
-                <p className='pb-5'>Once the circuit board is finished I will create a new case for the system. It will house compacter batteries. The voltages will be regulated using step voltage regulators placed at strategic points. The current of the RF module is very fragile and therefore another alternative is to be researched. The step regulator might create noise in the signal that is undesirable for the accuracy of the system. The system will be handed out to my local track and field club for free for the athletes to use whenever they want to measure their maximum velocity sprinting or to use data-driven training.</p>
-
+                <p className='pb-5'>The circuit board is powered only by the 12v battery. A buck stepdown converter will be used to power both the arduino and the sensor from the same source. An adapter board is required to mitigate noise from the very picky NRF24l01 module. This adapter board is now integrated into the pcb requiring less solder work and creating more stability. To prevent solder work lock in female headers are used to provide stable and easy power transmission. The following PCB was created:</p>
+                <div className='flex justify-center'><Image className='py-5'src="/AltiumPCB.png" alt="PCB" width={200} height={100} /></div>
+                From the 3d view this looks like the following:
+                <div className='flex justify-center'><Image className='py-5'src="/PCB3d.png" alt="PCB3d" width={200} height={100} /></div>
+                <p>Once the PCB is finished and tested, the next step is to create a new case for the system. The case will be designed in Fusion 360 and printed using a 3D printer. The current prototype for the case is the following:</p>
+                <div className='flex justify-center'><Image className='py-5'src="/Fusion3d.png" alt="Fusion360 prototype" width={200} height={100} /></div>
+            
             </div>
         </section>
     </>
